@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Image Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            background: #fff;
+            padding: 10px;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .item h3 {
+            margin-top: 12px;
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="item">
+            <a href="https://google.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="">
+            </a>
+            <h3>Google</h3>
+        </div>
+
+        <div class="item">
+            <a href="https://youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="">
+            </a>
+            <h3>YouTube</h3>
+        </div>
+
+        <div class="item">
+            <a href="https://wikipedia.org" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="">
+            </a>
+            <h3>Wikipedia</h3>
+        </div>
+
+        <div class="item">
+            <a href="https://github.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="">
+            </a>
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="item">
+            <a href="https://unsplash.com" target="_blank">
+                <img src="unsplash.png"  alt="">
+            </a>
+            <h3>Unsplash</h3>
+        </div>
+
+        <div class="item">
+            <a href="https://coolors.co" target="_blank">
+                <img src="ui-color-palette-analogous-color-palette.jpg" alt="">
+            </a>
+            <h3>Color Palettes</h3>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
