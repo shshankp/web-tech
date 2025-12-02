@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 2fr 2fr;
+      gap: 3px;
+      background-color: dodgerblue;
+      padding: 5px;
+    }
+
+    .container1 {
+      display: grid;
+      grid-template-areas:
+        "Box1 Box1"
+        "Box2 Box3"
+        "Box4 Box4";
+      grid-template-columns: 2fr 2fr;
+      gap: 3px;
+      background-color: dodgerblue;
+      padding: 5px;
+      margin-top: 20px;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .menu {
+      grid-area: menu;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .Box1 {
+      grid-area: Box1;
+      background-color: red;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .Box2 {
+      grid-area: Box2;
+      background-color: rgb(115, 139, 245);
+      padding: 10px;
+      text-align: center;       
+    }
+
+    .Box3 {
+      grid-area: Box3;
+      background-color: green;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .Box4 {
+      grid-area: Box4;
+      background-color: pink;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+  <div><h1 align="center">Grid Layout</h1></div>
+
+  <h1 align="center">ABES Engineering College</h1>
+  <h2 align="center">MCA Department</h2>
+
+  <div class="container">
+    <div class="header"><h2>WELCOME TO ABESEC</h2></div>
+    <div class="menu">
+      <a href="https://www.pexels.com/search/pet/">DOG PET</a><br>
+      <a href="https://4kwallpapers.com/Hindu-God">God</a><br>
+      <a href="https://www.pexels.com/search/sport/">Sports</a>
+    </div>
+    <div class="content">
+      <form>
+        <table align="center">
+          <tr><td>Email</td><td><input type="email" name="email"></td></tr> 
+          <tr><td>Password</td><td><input type="password" name="password"></td></tr>
+          <tr><td></td><td><input type="submit" value="Login"></td></tr>   
+        </table>
+      </form>
+    </div>
+    <div class="footer"><h4>Footer</h4></div>
+  </div>
+
+  <div class="container1">
+    <div class="Box1">Red</div>
+    <div class="Box2">Blue</div>
+    <div class="Box3">Green</div>
+    <div class="Box4">Pink</div>
+  </div>
+
+</body>
+</html>
