@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units Example</title>
+    <style>
+        html {
+            font-size: 16px; /* base for rem */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container1 {
+            width: 90%;              /* percentage */
+            min-height: 60vh;        /* viewport height */
+            background-color: lightblue;
+            margin: 2vh auto;        /* vh for top margin */
+            border-radius: 10px;     /* px */
+            font-weight: bold;
+            padding: 2rem;           /* rem */
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;              /* em *//* em */
+            justify-content: center;/* LEFT RIGHT */
+            align-items: end;/*TOP BOTTOM */
+            flex-direction: row; 
+        }
+        .pic{
+            height: 100px;
+            width: 100px;
+        }
+
+ 
+        .container1 p {
+            font-size: 1.2rem;
+            line-height: 1.6em;      /* em */
+            text-align: justify;
+            padding: 10px 20px;      /* px */
+            background: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container1">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptate quaerat eos corporis repellendus voluptatum!
+            Mollitia, accusantium nesciunt.
+        </div>
+
+        <img class="pic" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/fa/1b/lost-valley.jpg?w=1200&h=1200&s=1" alt="">
+  <img class="pic" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/fa/1b/lost-valley.jpg?w=1200&h=1200&s=1" alt="">
+  <img class="pic" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/fa/1b/lost-valley.jpg?w=1200&h=1200&s=1" alt="">
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Molestias, facilis facere. Itaque deleniti exercitationem
+            debitis rem architecto atque.
+        </p>
+    </div>
+
+</body>
+
+</html>
