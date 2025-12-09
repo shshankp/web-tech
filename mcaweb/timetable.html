@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 95%;
+      margin: 30px auto;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    thead th {
+      background-color: #e0e0e0;
+    }
+    th {
+      background-color: #d1c4e9;
+    }
+
+    /* Subject color classes */
+    .os { background-color: #ffcccb; }           /* light red */
+    .math { background-color: #c1e1c1; }         /* light green */
+    .ai { background-color: #d0e0ff; }           /* soft blue */
+    .emp { background-color: #ffe0b2; }          /* peach */
+    .ds { background-color: #f8bbd0; }           /* pink */
+    .web { background-color: #b3e5fc; }          /* sky blue */
+    .soft { background-color: #fff59d; }         /* yellow */
+    .library { background-color: #d7ccc8; }      /* greyish */
+    .lab { background-color: #c5cae9; }          /* lavender */
+    .mentor { background-color: #c8e6c9; }       /* mint green */
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Semester/Section - I/C</th>
+        <th colspan="9">Session - 2025-26, ODD Semester</th>
+      </tr>
+      <tr>
+        <th colspan="2">Class Room No: AB-209 | II Floor AB-Block</th>
+        <th colspan="9"></th>
+      </tr>
+      <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="9">Time</th>
+      </tr>
+      <tr>
+        <th>08:50–09:40</th>
+        <th>09:40–10:30</th>
+        <th>10:40–11:30</th>
+        <th>11:30–12:20</th>
+        <th>12:20–01:10</th>
+        <th>01:10–02:00</th>
+        <th>02:00–02:50</th>
+        <th>02:50–03:40</th>
+        <th>03:40–04:30</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>Monday</th>
+        <td class="os">Operating System</td>
+        <td class="math">Mathematics</td>
+        <td class="ai">AI</td>
+        <td class="emp">Employability Skills</td>
+        <td rowspan="5">LUNCH</td>
+        <td class="ds">Data Structure</td>
+        <td class="web">Web Designing</td>
+        <td class="soft">Soft Skills</td>
+        <td class="library">Library</td>
+      </tr>
+
+      <tr>
+        <th>Tuesday</th>
+        <td class="web">Web Designing</td>
+        <td class="os">Operating System</td>
+        <td class="web">Web Designing</td>
+        <td class="ds">Data Structure</td>
+        <td class="math">Mathematics</td>
+        <td class="ai">AI</td>
+        <td class="soft">Soft Skills</td>
+        <td class="library">Library</td>
+      </tr>
+
+      <tr>
+        <th>Wednesday</th>
+        <td class="ds">Data Structure</td>
+        <td class="math">Mathematics</td>
+        <td colspan="2" class="emp">Employability Skills</td>
+        <td class="soft">Soft Skills</td>
+        <td colspan="2" class="lab">AI Lab</td>
+        <td class="web">Web Designing</td>
+      </tr>
+
+      <tr>
+        <th>Thursday</th>
+        <td colspan="2" class="lab">Web Designing Lab</td>
+        <td class="math">Mathematics</td>
+        <td class="web">Web Designing</td>
+        <td class="soft">Soft Skills</td>
+        <td class="os">Operating System</td>
+        <td colspan="2" class="lab">DSA Lab</td>
+      </tr>
+
+      <tr>
+        <th>Friday</th>
+        <td class="math">Mathematics</td>
+        <td class="ds">Data Structure</td>
+        <td class="os">Operating System</td>
+        <td class="soft">Soft Skills</td>        
+        <td class="ai">AI</td>
+        <td class="os">Operating System</td>
+        <td colspan="2" class="mentor">Mentor Meeting</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
