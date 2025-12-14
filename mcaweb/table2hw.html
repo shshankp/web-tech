@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 30px auto;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+
+        .highlight {
+            background-color: #ffeb3b;
+        }
+
+        td[rowspan] {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Academic Record</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2">S.No</th>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Roll No.</th>
+            <th colspan="3">Marks</th>
+            <th rowspan="2">Email</th>
+            <th rowspan="2">Phone</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+    </thead>
+
+        <tr>
+            <td>1</td>
+            <td>Rohan</td>
+            <td>23</td>
+            <td>95</td>
+            <td>89</td>
+            <td>92</td>
+            <td>rohan@gmail.com</td>
+            <td>949020540</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Ayush</td>
+            <td>24</td>
+            <td>88</td>
+            <td>91</td>
+            <td>90</td>
+            <td>ayush@gmail.com</td>
+            <td>459575705</td>
+        </tr>
+
+        <tr class="highlight">
+            <td>3</td>
+            <td rowspan="2">Shshank</td>
+            <td rowspan="2">25</td>
+            <td>70</td>
+            <td>72</td>
+            <td>68</td>
+            <td rowspan="2">shshank@gmail.com</td>
+            <td rowspan="2">958496989</td>
+        </tr>
+        <tr class="highlight">
+            <td>—</td>
+            <td colspan="3">Improved performance in next term</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Abhishek</td>
+            <td>26</td>
+            <td>92</td>
+            <td>95</td>
+            <td>98</td>
+            <td>abhishek@gmail.com</td>
+            <td>349839598</td>
+        </tr>
+
+        <tr>
+            <td colspan="8" style="text-align:center; font-weight:bold; background-color:#d4edda;">
+                Total Students: 4 | Average Score Calculated Separately
+            </td>
+        </tr>
+</table>
+
+</body>
+</html>
